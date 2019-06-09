@@ -1,45 +1,139 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Webpage</title>
+        <title>Josh Feldman Blog</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-      <p>I am in the MSc in Data Science program at <a href="https://www.seas.harvard.edu/programs/graduate/applied-computation/master-of-science-in-data-science">Harvard SEAS</a>. I am interested in using data science to improve public health, public interest technology, and the governance of AI.</p>
+        <div class='container'>
+            <div class='row'>
+                <div class = 'col-4'>
+                    <div class="col-12" id="sticky-sidebar">
+                        <a class="sidebar-title" href="index.html">Josh Feldman Blog</a>
+                        <div class="headshot-padding">
+                            <img class='mx-auto d-block headshot' src="joshF_square.jpg" alt="headshot">
+                        </div>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="about.html">About Me</a>
+                            <a class="nav-link" href="index.html">Posts</a>
+                            <ul class="sidebar-list">
+                                <li>
+                                    <a class="nav-link" href="https://sites.google.com/view/cs109lendingclubgroup52/home?authuser=0">"Fair" Investment Strategies</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="http://blog.petrieflom.law.harvard.edu/2018/11/30/the-tricky-task-of-defining-ai-in-the-law/">Defining AI</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="weight-uncertainty.html">Bayesian Neural Networks</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="neural-net-tutorial.html">Intro to Neural Networks</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="new-wards.html">New Wards, New Problems</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-8" id="main">
+                    <ul class="post-list">
+                        <li>
+                            <header class="post-header">
+                                <h1 class="post-title">
+                                    <a class="post-link" href="https://sites.google.com/view/cs109lendingclubgroup52/home?authuser=0">
+                                        Can an Investment Strategy be Fair and Profitable?
+                                    </a>
 
-      <p>Before coming to Harvard, I was BlueDot’s first data scientist where I used natural language processing to monitor infectious disease activity. I have a BSc in Mathematics from Dalhousie University where I researched probabilistic networks with <a href="https://www.mscs.dal.ca/~janssen/">Dr. Jeannette Janssen</a>.</p>
-
-      <p>You can reach me at joshua_feldman [at] g [dot] harvard [dot] edu.</p>
-
-      <h1 id="updates">Updates</h1>
-
-      <p>I’m trying to start a certificate in public interest data science at Harvard. If you have any thoughts on this, please let me know! If you’re interested in public interest tech, <a href="https://www.schneier.com/">Bruce Schneier</a> has put together a great <a href="https://public-interest-tech.com/">collection</a> of resources.</p>
-
-      <h1 id="research">Research</h1>
-
-      <p>I am currently working at the <a href="http://petrieflom.law.harvard.edu/">Petrie-Flom Center for Health Law Policy, Biotechnology, and Bioethics</a> at Harvard Law School on <a href="http://petrieflom.law.harvard.edu/resources/article/petrie-flom-center-launches-pmail-project">Precision Medicine, AI, and the Law</a>.</p>
-
-      <p><strong>Past Projects:</strong></p>
-
-      <p><strong>Q:</strong> Can we use the news to monitor infectious diseases?<br />
-      <strong>A:</strong> <a href="https://insights.bluedot.global/Account/Login">Yes</a> (with <a href="https://bluedot.global/">BlueDot</a>)</p>
-
-      <p><strong>Q:</strong> Can the prevalence of reinfection tell us about how far we are from controlling an epidemic?<br />
-      <strong>A:</strong> It <a href="https://jammi.utpjournals.press/doi/pdf/10.3138/jammi.2.suppl-1.1">can</a> (with <a href="http://stmichaelshospitalresearch.ca/researchers/sharmistha-mishra/">Dr. Sharmistha Mishra</a> at the <a href="http://stmichaelshospitalresearch.ca/research-programs/urban-health-solutions/">Centre for Urban Health Solutions</a>).</p>
-
-      <p><strong>Q:</strong> How does the behaviour of highly connected individuals affect how diseases spread with respect to communities?<br />
-      <strong>A:</strong> When popular individuals are more contagious, diseases are more likely to <a href="https://link.springer.com/chapter/10.1007/978-3-319-67810-8_5">jump from one community to another</a> (with <a href="https://www.mscs.dal.ca/~janssen/">Dr. Jeannette Janssen</a> at Dalhousie University)</p>
-
-      <p><strong>Q:</strong> Can we use electronic medical records to improve cancer screening rates?<br />
-      <strong>A:</strong> We <a href="https://bmjopenquality.bmj.com/content/6/1/u213991.w5531">can</a> (with Sam Davie and <a href="https://www.dfcm.utoronto.ca/content/tara-kiran">Dr. Tara Kiran</a> at St. Michael’s Hospital Family Health Team)</p>
-
-      <h1 id="papers">Papers</h1>
-      <p><strong>High Degree Vertices and the Spread of Infection in Spatially Modelled Social Networks.</strong><br />
-      Joshua Feldman, Jeannette Janssen<br />
-      <em>Algorithms and Models for the Web Graph</em></p>
-
-      <p><strong>Measuring and improving cervical, breast, and colorectal cancer screening rates in a multi-site urban practice in Toronto, Canada.</strong><br />
-      Joshua Feldman, Sam Davie, Tara Kiran<br />
-      <em>British Medical Journal Open Quality</em>
-      <a href="https://bmjopenquality.bmj.com/content/6/1/u213991.w5531">[BMJ Open Quality]</a></p>
+                                </h1>
+                                <p class="post-meta">
+                                    Dec 20, 2018
+                                </p>
+                            </header>
+                            <div class="post-content">
+                                <p>The answer is yes. See more <a href="https://sites.google.com/view/cs109lendingclubgroup52/home?authuser=0">here</a>.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <header class="post-header">
+                                <h1 class="post-title">
+                                    <a class="post-link" href="http://blog.petrieflom.law.harvard.edu/2018/11/30/the-tricky-task-of-defining-ai-in-the-law/">
+                                        The Tricky Task of Defining AI in the Law
+                                    </a>
+                                </h1>
+                                <p class="post-meta">
+                                    Dec 20, 2018
+                                </p>
+                            </header>
+                            <div class="post-content">
+                                <p>How will we be able to regulate AI if we can’t define it? Sara Gerke and I explore this question <a href="http://blog.petrieflom.law.harvard.edu/2018/11/30/the-tricky-task-of-defining-ai-in-the-law/">here</a>.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <header class="post-header">
+                                <h1 class="post-title">
+                                    <a class="post-link" href="weight-uncertainty.html">
+                                        Weight Uncertainty in Neural Networks Tutorial
+                                    </a>
+                                </h1>
+                                <p class="post-meta">
+                                    Dec 17, 2018
+                                </p>
+                            </header>
+                            <div class="post-content">
+                                <p>Bayes by Backprop is an algorithm for training Bayesian neural networks (what is a Bayesian neural network, you ask? Read more to find out), which was developed in the paper “Weight Uncertainty in Neural Networks” by Blundell et al. We will be using pytorch for this tutorial along with several standard python packages. I put this tutorial together with Joe Davison, Lucie Gillet, Baptiste Lemaire, and Robbert Struyven.</p>
+                            </div>
+                            <p class="post-continue">
+                                <a href="weight-uncertainty.html">Read on &rarr;</a>
+                            </p>
+                        </li>
+                        <li>
+                            <header class="post-header">
+                                <h1 class="post-title">
+                                    <a class="post-link" href="neural-net-tutorial.html">
+                                        Intro to Neural Networks
+                                    </a>
+                                </h1>
+                                <p class="post-meta">
+                                    Nov 12, 2018
+                                </p>
+                            </header>
+                            <div class="post-content">
+                                <p>
+                                    This tutorial will take you from never using python to training your first neural network!
+                                </p>
+                            </div>
+                            <p class="post-continue">
+                                <a href="neural-net-tutorial.html">
+                                    Read on &rarr;
+                                </a>
+                            </p>
+                        </li>
+                        <li>
+                            <header class="post-header">
+                                <h1 class="post-title">
+                                    <a class="post-link" href="new-wards.html">New Wards, New Problems</a>
+                                </h1>
+                                <p class="post-meta">
+                                    Nov 12, 2018
+                                </p>
+                            </header>
+                            <div class="post-content">
+                                <p>
+                                    This is an op-ed Zac Smith and I wrote on the new wards in Toronto
+                                </p>
+                            </div>
+                            <p class="post-continue">
+                                <a href="new-wards.html">Read on &rarr;</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
